@@ -1,0 +1,278 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 62.5%;
+	font-family: Helvetica, Arial, STXihei, "华文细黑", "Microsoft YaHei",
+		"微软雅黑", Heiti, "黑体", SimSun, "宋体", sans-serif;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.upchat-log {
+	width: 320px;
+	height: 80px;
+	margin: 12px auto;
+	display: block;
+	background: url("../images/logo_new.png") center no-repeat;
+	background-size: 60px;
+}
+
+.upchat-tilte {
+	width: 320px;
+	text-align: center;
+	font-size: 1.4rem;
+	color: #000000;
+	margin: 7px auto 20px;
+}
+
+.choose-tops {
+	margin: 6px auto 20px;
+	color: #616161;
+}
+
+.choose-qcorde {
+	color: #616161;
+}
+
+.upchat-content {
+	width: 320px;
+	font-size: 1.2rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.upchat-content-app {
+	width: 275px;
+	font-size: 1.2rem;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.upchat-org-list {
+	/*margin-left: -10px;*/
+	margin-left: 80px; /*wxl 2016.4.27*/
+}
+
+.upchat-org-list li {
+	float: center;
+	width: 65px;
+	height: 65px;
+	margin: 7px 5px;
+	border: 1px solid #DCDCDC;
+	border-radius: 13px;
+}
+
+.upchat-org-list li img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.upchat-content-qcorde {
+	width: 250px;
+	height: 250px;
+	border: 1px solid #DCDCDC;
+	border-radius: 10px;
+	margin: 20px auto;
+	margin-top: 10px;
+}
+
+.upchat-qcorde {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.qcorde-block {
+	width: 275px;
+	height: 275px;
+	border: 1px solid #D5D5D5;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.qcorde {
+	width: 232px;
+	height: 232px;
+	margin-top: 10px;
+}
+
+.next {
+	width: 25px;
+}
+
+.clear {
+	clear: both;
+}
+
+.upchat-download {
+	margin-top: 13px;
+}
+
+.upchat-download-left {
+	width: 84px;
+	height : 84px;
+	background: url("../images/logo_new.png") left no-repeat;
+	background-size: 60px;
+	border-right: 1px dotted #D8D8D8;
+	float: left;
+	height: 84px;
+}
+
+.upchat-download-right {
+	float: left;
+	margin-left: 20px;
+}
+
+.upchat-download-right .describe {
+	font-size: 1.4rem;
+	color: #4A4A4A;
+	font-weight: lighter;
+	text-align: left;
+	/*margin-left: 50px;*/
+	margin-left: 90px;
+}
+
+.btn-download {
+	display: block;
+	width: 170px;
+	height: 44px;
+	background: url("../images/btn-download-4.png") no-repeat;
+	background-size: 170px;
+	margin-top: 10px;
+}
+
+.org-logo-spdb {
+	background: url("../images/spdb-small.png") top left no-repeat;
+	background-size: 80px;
+}
+
+.org-logo-yinlian {
+	background: url("../images/yinlian-small.png") top left no-repeat;
+	background-size: 36px;
+}
+
+.org-logo-pbc {
+	background: url("../images/renminyinhang-small.png") top left no-repeat;
+	background-size: 36px;
+}
+
+.org-logo-ums {
+	background: url("../images/yinlianshangwu-small.png") top left no-repeat;
+	background-size: 36px;
+}
+
+.org-logo-fuiou {
+	background: url("../images/fuyou-small.png") top left no-repeat;
+	background-size: 36px;
+}
+
+.org-logo-exp {
+	background: url("../images/renminyinhang-small.png") top left no-repeat;
+	background-size: 36px;
+}
+
+.org-logo-allinpay {
+	background: url("../images/tonglian-small.png") top left no-repeat;
+	background-size: 36px;
+}
+
+.org-logo-other {
+	background: url("../images/qita-small.png") top left no-repeat;
+	background-size: 36px;
+}
+
+.org-logo-eccom {
+	background: url("../images/eccom-small.png") top left no-repeat;
+	background-size: 36px;
+}
+
+.feature-common p {
+	text-align: left;
+}
+
+.x-landing-wrapper {
+	display: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+	box-sizing: content-box;
+	z-index: 5000;
+}
+
+.x-landing-wrapper .x-landing-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.x-landing-wrapper .wx-tips {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	line-height: 1.5;
+	background: url("../images/jiantou.png") 90% 10% no-repeat;
+}
+
+.x-landing-wrapper .wx-tips h3 {
+	font-size: 18px;
+	font-weight: 700;
+	padding: 80px 20px 0;
+	margin: 0 0 12px;
+}
+
+.x-landing-wrapper .wx-tips p {
+	padding: 0 20px;
+}
+
+.x-landing-wrapper .wx-tips .close {
+	margin: 30px auto 0;
+	border-radius: 5px;
+	border: 1px solid;
+	padding: 2px 20px;
+	width: 70px;
+	text-align: center;
+}
+
+.circle {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 5px;
+	background: #D8D8D8;
+	margin: 0 10px 2px 10px;
+}
+
+h1 {
+	font-size: 1.5rem;
+	color: #4A4A4A;
+	font-weight: lighter;
+}
+
+.feature-common {
+	margin-top: 20px;
+}
+
+.feature-common p {
+	color: #4A4A4A;
+	line-height: 150%;
+}

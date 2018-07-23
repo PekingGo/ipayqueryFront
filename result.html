@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>查询结果（缩略）</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<script src="js/mui.min.js"></script>
+		<script src="js/vue.js"></script>
+		<script src="js/jquery-1.11.0.js"></script>
+    	<link href="css/mui.min.css" rel="stylesheet"/>
+    	<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/mobile/result.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">查询结果</h1>
+		</header>
+		<div class="mui-content" id="listCard">
+			<query-result v-for="item in list" v-bind:detail="item"></query-result>
+		<!--	<div class="mui-card">
+				<div class="mui-card-header "><font class="fontB"><font color="red">60</font>138</font></div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<span>中国银行(01040000)</span>
+						<span>|</span>
+						<span>借记卡</span>
+						<span>|</span>
+						<span>长城电子借记卡</span>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-badge mui-badge-success">银行卡BIN</a>
+					<a class="mui-card-link">详细</a>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header"><font class="fontB">1041000040<font color="red">60</font>0</font> </div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<span>中国银行</span>
+						<span>|</span>
+						<span>中国银行股份有限公司北京永定路支行</span>
+						<span>|</span>
+						<span>北京市海淀区复兴路甲38号</span>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-badge mui-badge-success">开户联行号</a>
+					
+					<a class="mui-card-link" href="resultDetail.html">详细</a>
+				</div>
+			</div>
+			
+			<div class="mui-card">
+				<div class="mui-card-header"><font class="fontB"><font color="red">60</font></font></div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<span>受卡方与安全保密部门联系</span>
+						<span>|</span>
+						<span>C交易失败，不需要重试</span>
+						<span>|</span>
+						<span>交易失败，请联系发卡行</span>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-badge mui-badge-success">POS机应答码</a>
+					<a class="mui-card-link">详细</a>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header"><font class="fontB">财付通<font color="red">支付</font>科技有限公司（深圳市财付通科技有限公司</font></div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<span>中国银行(01040000)</span>
+						<span>|</span>
+						<span>借记卡</span>
+						<span>|</span>
+						<span>长城电子借记卡</span>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-badge mui-badge-success">支付公司</a>
+					
+					<a class="mui-card-link">详情</a>
+				</div>
+			</div>-->
+		</div>	
+		<script src="js/mui.min.js"></script>
+		<script src="js/mobile/resultPackage.js"></script>
+	</body>
+
+</html>

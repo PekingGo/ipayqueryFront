@@ -1,0 +1,20 @@
+# ignore for Eclipse
+.settings
+.project
+.classpath
+
+# ignore for IntelliJ Idea
+.idea
+*.iml
+
+# ignore for output file
+/dist/*
+/dsit/images/*
+/img/*
+# ignore for node_modules
+/node_modules/
+# ignore for log
+*.log
+
+# ignore for server.config.js
+server.config.js

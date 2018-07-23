@@ -1,0 +1,33 @@
+{
+  "name": "microfin",
+  "version": "1.0.0",
+  "description": "cha.zfzj.cn",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --hot --port 8800",
+    "build": "webpack"
+  },
+  "author": "flyman",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.5.16",
+    "vuex": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-es2015-sticky-regex": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "file-loader": "^0.11.2",
+    "url-loader": "^0.5.9",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^13.7.2",
+    "vue-router": "^2.8.1",
+    "vue-style-loader": "^3.1.2",
+    "vue-template-compiler": "^2.5.16",
+    "vue-template-loader": "^2.4.4",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.11.2"
+  }
+}

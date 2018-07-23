@@ -1,0 +1,13 @@
+.fontH{
+	white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+	font-size: 14px;
+}
+.fontV{
+	color: #000000 !important;
+	white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+	max-width: 252px;
+}
+.fontR{
+	color: red;
+}
+

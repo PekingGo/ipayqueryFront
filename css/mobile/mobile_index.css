@@ -1,0 +1,145 @@
+/*body{
+    background-color: #FFFFFF;
+}*/
+/**
+ * result.html
+ */
+.fontB{
+	font-weight: bold;
+}
+.mui-card-header{
+	font-size: 14px;
+}
+.result-body{
+    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000;
+    background-color: #efeff4;
+    -webkit-overflow-scrolling: touch;
+}
+/**-----*/
+.logo{
+	background-image: url(../../img/img01.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 68px;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+}
+.form{
+	/*width: 100%;*/
+	margin: 10px 10px;
+}
+.category{
+	font-size: 16px;
+	padding: 8px;
+	margin: 3px;
+}
+.searchBtn{
+    height: 42px;
+	width: 100%;
+	font-size: 16px;
+}
+.searchInput{
+    height: 42px !important;
+	width: 100%;
+	border: 1px solid rgb(76,217,100) !important;
+}
+.listUl{
+	list-style: none;
+	margin: 10px 10px;
+	padding: 0;
+}
+.listUl li{
+	height: 53px;
+	text-align: center;
+	margin: 0;
+	padding:  10px 0px;
+	font-size: 12px ;
+}
+.fl{
+	float:left;
+	width: 48%;
+	height: 100%;
+	padding: 6px 0;
+	/*margin: 0px 10px;*/
+	border: 1px solid #007aff/*rgb(76,217,100);
+	border-left: 1px solid rgb(76,217,100);
+    border-bottom: 1px solid rgb(76,217,100);	*/
+}
+/*li>div {
+	background-color:#007aff;
+	color: rgb(255,255,255);
+}
+li>div a{
+	color: rgb(255,255,255);
+}*/
+li>div:hover {
+	background-color:  #007aff;
+	color: rgb(255,255,255);
+}
+li>div:hover a{
+	color: rgb(255,255,255);
+}
+.fr{
+	float:right;
+	width: 48%;
+	height: 100%;
+	padding: 6px 0;
+	/*margin: 0px 10px;*/
+	border: 1px solid #007aff/*rgb(76,217,100)*/;
+}
+.num{
+	color: /*#f81b1b*/#000000;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	
+}
+/*.numType{
+	color:#000000;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+.numd{
+	color: #grey;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}*/
+.percent{
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	
+}
+.date{
+	height: 30px; 
+	line-height: 30px;
+	margin: 0px,10px;
+	padding-right: 15px;
+}
+.mui-grid-view.mui-grid-9{
+	background-color:#FFFFFF;
+}
+.mui-slider-indicator{
+	bottom: -5px;
+}
+/*搜索框6*/
+
+#container{height: 820px; margin: 0 auto; }
+div.search {    
+	padding: 96px 20px 30px;
+    background-image: url(../../img/s6.png);
+    background-size: 100%;
+    } 
+form { position: relative; width: 100%; margin: 0 auto; } 
+input, button { border: none; outline: none; } 
+input { width: 100%; height: 42px; padding-left: 13px; } 
+button { height: 40px; width: 42px; cursor: pointer; position: absolute; }
+.bar6 {background: #FFFFFF;} 
+.bar6 input { border: 2px solid #007aff; border-radius: 5px;  background: #ffffff; top: 0; right: 0; } 
+.bar6 button { background: #007aff; border-radius: 0 5px 5px 0; width: 60px; top: 0; right: 0; } 
+.bar6 button:before { content: "搜索"; font-size: 13px; color: #F9F0DA; } 
