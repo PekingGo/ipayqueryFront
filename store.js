@@ -8,7 +8,7 @@ import server from './server.config.js'
 Vue.use(Vuex);
 //定义状态；属性
 var state = {
-	url:'http://'+server.host+server.port+server.project,
+	url:'https://'+server.host+server.port+server.project,
 	k:'',
 	ck:'',
 	hotTips:[],
@@ -16,6 +16,7 @@ var state = {
 		loading:true,
 		catg:""
 	},
+    show: true,
 	categoryResult:{},
 	searchResult:{},
 	news:[{id:0,title:'支付行业，是如何赚走你的钱？',url:'http://www.zfzj.cn/portal.php?mod=view&aid=93',type:'资讯'}],
@@ -70,48 +71,48 @@ var state = {
   		return true;
 	},
 	getsec(str){
-		var str1=str.substring(1,str.length)*1; 
-		var str2=str.substring(0,1); 
-		if (str2=="s"){ 
-		        return str1*1000; 
-		}else if (str2=="h"){ 
-		       return str1*60*60*1000; 
+		var str1=str.substring(1,str.length)*1;
+		var str2=str.substring(0,1);
+		if (str2=="s"){
+		        return str1*1000;
+		}else if (str2=="h"){
+		       return str1*60*60*1000;
 		}else if (str2=="d")
-		{ 
-	       return str1*24*60*60*1000; 
-	    } 
+		{
+	       return str1*24*60*60*1000;
+	    }
 	},
 	//设置Cookie
-	//s20是代表20秒 
-	//h是指小时，如12小时则是：h12 
-	//d是天数，30天则：d30 
-	setCookie(name,value,time){ 
-	    var strsec = this.getsec(time); 
-	    var exp = new Date(); 
-	    exp.setTime(exp.getTime() + strsec*1); 
+	//s20是代表20秒
+	//h是指小时，如12小时则是：h12
+	//d是天数，30天则：d30
+	setCookie(name,value,time){
+	    var strsec = this.getsec(time);
+	    var exp = new Date();
+	    exp.setTime(exp.getTime() + strsec*1);
 	    document.cookie = name + "="+ escape (value)+ ";expires=" + exp.toGMTString();
 	},
 	//取Cookie
 	getCookie(c_name){
 　　　　if (document.cookie.length>0){
 　　　　　　var c_start=document.cookie.indexOf(c_name + "=")　　　　
-　　　　　　if (c_start!=-1){ 
+　　　　　　if (c_start!=-1){
 　　　　　　　　c_start=c_start + c_name.length+1
 　　　　　　　　var c_end=document.cookie.indexOf(";",c_start)　　
 　　　　　　　　if (c_end==-1) c_end=document.cookie.length　　
 　　　　　　　　return unescape(document.cookie.substring(c_start,c_end))
-　　　　　　} 
+　　　　　　}
 　　　　}
 　　　　return ""
 　　},
-	//删除cookies 
-	delCookie(name) { 
-	    var exp = new Date(); 
-	    exp.setTime(exp.getTime() - 1); 
-	    var cval=getCookie(name); 
-	    if(cval!=null) 
-	        document.cookie= name + "="+cval+";expires="+exp.toGMTString(); 
-		} 
+	//删除cookies
+	delCookie(name) {
+	    var exp = new Date();
+	    exp.setTime(exp.getTime() - 1);
+	    var cval=getCookie(name);
+	    if(cval!=null)
+	        document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+	}
 }
 //创建actions对象
 const actions={
@@ -222,6 +223,7 @@ const actions={
 			success(result){
 				//保留三条新闻信息
 				commit('updateNews',result.slice(0,3));
+				commit('updateShow');
 			},
 			error(errorMsg){
 				alert('网络连接失败，请重试！');
@@ -245,8 +247,11 @@ const mutations={
 	},
 	updateNews(state,payload){
 		state.news = payload
-	}
-	
+	},
+    updateShow(state,payload){
+	    state.show = false;
+    }
+
 }
 //创建store对象
 const store = new Vuex.Store({

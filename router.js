@@ -43,4 +43,4 @@ const router = new VueRouter({
 				}
 	]//相当于routes:routes
 });
-module.exports= router
+module.exports= router;
